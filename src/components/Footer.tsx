@@ -1,4 +1,6 @@
 export default function Footer() {
+  const currentYear = new Date().getUTCFullYear()
+
   return (
     <footer
       style={{
@@ -14,7 +16,7 @@ export default function Footer() {
     >
       Made with{' '}
       <span style={{ color: 'var(--accent)' }}>♥</span>
-      {' '}by M4r1os — {new Date().getFullYear()}
+      {' '}by M4r1os — <span suppressHydrationWarning>{currentYear}</span>
     </footer>
   )
 }

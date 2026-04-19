@@ -14,11 +14,11 @@
 }
 
 .light {
-  --bg: #f5f5f0;
+  --bg: #f7f8fb;
   --bg-card: #ffffff;
-  --text: #111111;
-  --text-muted: rgba(0, 0, 0, 0.55);
-  --border: rgba(0, 0, 0, 0.08);
+  --text: #0f172a;
+  --text-muted: rgba(15, 23, 42, 0.68);
+  --border: rgba(15, 23, 42, 0.14);
 }
 
 * {

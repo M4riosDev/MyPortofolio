@@ -4,6 +4,18 @@ Personal portfolio website for Marios, built with **Next.js 14**, **TypeScript**
 
 Live site: []()
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Development](#development)
+- [Scripts](#scripts)
+- [Customization](#customization)
+- [Contact Form](#contact-form)
+- [Deployment](#deployment)
+- [Project Structure](#project-structure)
+
 ## Overview
 
 This portfolio presents Marios' work, experience, and contact information in a clean single-page flow with animated visuals, theme switching, and a responsive layout.
@@ -60,9 +72,30 @@ Open [http://localhost:3000](http://localhost:3000) after the dev server starts.
 
 ## Contact Form
 
-The contact page uses EmailJS. Configure your service, template, and public key in `src/app/contact/page.tsx`.
+The contact form uses **SMTP** (Gmail or any email provider) for email delivery.
 
-## Deployment
+### Setup Steps:
+
+1. **Create `.env.local`** in project root with your SMTP credentials:
+   ```bash
+   # Email / SMTP
+   SMTP_HOST="smtp.gmail.com"
+   SMTP_PORT="587"
+   SMTP_USER="your-email@gmail.com"
+   SMTP_PASS="your-app-password"
+   SMTP_FROM="Your Name <your-email@gmail.com>"
+   EMAIL_TO="recipient@example.com"
+   ```
+
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Restart dev server** (`npm run dev`)
+
+Done! Form submissions will now send emails via SMTP.
 
 Build the app with `npm run build` and deploy it to a Next.js-compatible host such as Vercel.
 
