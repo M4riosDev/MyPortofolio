@@ -29,7 +29,7 @@ const jetbrains = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: 'M4r1os — Full-Stack Developer',
+    default: 'M4r1os | Full-Stack Developer',
     template: '%s | M4r1os',
   },
   description:
@@ -56,15 +56,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://m4rios.dev'),
   manifest: '/site.webmanifest',
   icons: {
-    icon: [
-      { url: '/m4r1s.png', type: 'image/png' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-    ],
+    icon: [{ url: '/m4r1s.png', type: 'image/png' }],
     shortcut: ['/m4r1s.png'],
     apple: [{ url: '/m4r1s.png' }],
   },
   openGraph: {
-    title: 'M4r1os — Full-Stack Developer',
+    title: 'M4r1os | Full-Stack Developer',
     description:
       'Building Discord bots, web apps, Minecraft mods & open source tools with JavaScript, TypeScript, and Python.',
     type: 'website',
@@ -80,7 +77,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'M4r1os — Full-Stack Developer',
+    title: 'M4r1os | Full-Stack Developer',
     description:
       'Building Discord bots, web apps, Minecraft mods & open source tools with JavaScript, TypeScript, and Python.',
     images: ['/m4r1s.png'],

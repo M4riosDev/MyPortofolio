@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useTheme } from './ThemeProvider'
 
@@ -66,6 +67,9 @@ export default function Navbar() {
         <Link
           href="/"
           style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 10,
             fontFamily: 'var(--font-jetbrains)',
             fontSize: '1.1rem',
             fontWeight: 700,
@@ -73,6 +77,17 @@ export default function Navbar() {
             letterSpacing: '-0.5px',
           }}
         >
+          <Image
+            src="/m4r1s.png"
+            alt="M4r1os logo"
+            width={30}
+            height={30}
+            priority
+            style={{
+              borderRadius: 8,
+              border: '1px solid var(--border)',
+            }}
+          />
           m4rios<span style={{ color: 'var(--text)', opacity: 0.4 }}>.dev</span>
         </Link>
 
