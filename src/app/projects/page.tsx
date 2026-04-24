@@ -300,8 +300,8 @@ export default function ProjectsPage() {
           {/* Header */}
           <div className="projects-header">
             <span className="projects-label">{'// projects'}</span>
-            <h1 className="projects-title">Things I've built</h1>
-            <p className="projects-sub">A collection of projects I've worked on — from web apps to Discord bots.</p>
+            <h1 className="projects-title">Things I&apos;ve built</h1>
+            <p className="projects-sub">A collection of projects I&apos;ve worked on — from web apps to Discord bots.</p>
           </div>
 
           {/* Grid */}
