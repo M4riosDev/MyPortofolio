@@ -40,7 +40,6 @@ This portfolio presents Marios' work, experience, and contact information in a c
 - Framer Motion
 - Typed.js
 - tsparticles
-- EmailJS
 
 ## Development
 
